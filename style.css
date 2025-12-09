@@ -1,0 +1,166 @@
+/* GLOBAL STYLES & TYPOGRAPHY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Light, soft background */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Darker heading color */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    border-bottom: 2px solid #3498db; /* Subtle blue line */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* MAIN CONTAINER LAYOUT */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center everything horizontally */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the main content area */
+}
+
+/* TABLE STYLING */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd; /* Lighter border color */
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db; /* Blue header */
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+/* Alternate row color for readability */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f0f8ff; /* Subtle highlight on hover */
+}
+
+/* Read Status Styling */
+.read-status-yes {
+    color: #27ae60; /* Green for read */
+    font-weight: bold;
+}
+
+.read-status-no {
+    color: #e74c3c; /* Red for unread */
+    font-weight: bold;
+}
+
+
+/* BUTTON STYLING */
+button {
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    margin-top: 0; /* Removing the 20px margin-top from the previous version for better control */
+}
+
+/* Global New Book Button */
+#new-book-btn {
+    background-color: #2ecc71; /* Emerald green */
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    margin-bottom: 30px; /* Space it out from the table */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#new-book-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Table Action Buttons */
+.read-toggle-btn {
+    background-color: #f39c12; /* Orange/Yellow for toggling */
+    color: white;
+}
+
+.read-toggle-btn:hover {
+    background-color: #d35400;
+}
+
+.remove-btn {
+    background-color: #e74c3c; /* Red for deletion */
+    color: white;
+    margin-left: 10px; /* Reduced spacing between buttons */
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+/* DIALOG/FORM STYLING */
+#book-form-dialog {
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+#book-form-dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7); /* Dim the background */
+}
+
+#add-book-form h3 {
+    color: #3498db;
+    margin-top: 0;
+    border-bottom: 1px dashed #ecf0f1;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#add-book-form input[type="text"],
+#add-book-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Form Buttons */
+#add-book-form button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    margin-right: 10px;
+}
+
+#add-book-form button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+#close-dialog-btn {
+    background-color: #95a5a6;
+    color: white;
+}
+
+#close-dialog-btn:hover {
+    background-color: #7f8c8d;
+}
